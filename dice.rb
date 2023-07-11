@@ -43,7 +43,7 @@ end
 get("/dice/1/20") do
   @d20 = rand(1..20)
 
-  @outcome_d20 = "You rolled a #{d20}."
+  @outcome_d20 = "You rolled a #{@d20}."
   
   erb(:one_twenty)
 end
