@@ -7,7 +7,12 @@
 <body>
 
   <h1>d20</h1>
-
-  <p><%= @outcome_d20 %></p>
+  <% if @die == 1 %>
+    <p style="color:red"><%= @outcome_d20 %></p>
+  <% elsif @die == 20 %>
+    <p style="color:green"><%= @outcome_d20 %></p>
+  <% else %>
+    <p><%= @outcome_d20 %></p>
+  <% end %>
 </body>
 </html>

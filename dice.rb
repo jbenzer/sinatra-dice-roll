@@ -41,7 +41,7 @@ get("/dice/2/10") do
 end
 
 get("/dice/1/20") do
-  d20 = rand(1..20)
+  @d20 = rand(1..20)
 
   @outcome_d20 = "You rolled a #{d20}."
   
